@@ -33,7 +33,7 @@ jobs:
           os.makedirs('site', exist_ok=True)
           with zipfile.ZipFile(archive) as z:
               for item in z.infolist():
-                  name = item.filename.replace('\\\\', '/')
+                  name = item.filename.replace(chr(92), '/')
                   if not name or name.startswith('/') or '..' in name.split('/'):
                       continue
                   target = os.path.join('site', name)
