@@ -14,38 +14,126 @@
   <div class="bg-photo" aria-hidden="true"></div>
   <div class="bg-vignette" aria-hidden="true"></div>
   <canvas id="webCanvas" aria-hidden="true"></canvas>
-  <div class="cursor-spider" id="cursorSpider" aria-hidden="true"><img src="assets/spider-cursor.png" alt="" /></div>
+  <div class="cursor-spider" id="cursorSpider" aria-hidden="true">
+    <img src="assets/spider-cursor.png" alt="" />
+  </div>
   <div class="cursor-trail" id="cursorTrail" aria-hidden="true"></div>
+
   <header class="nav">
-    <a class="brand" href="#home" aria-label="Home"><span class="brand-mark">AF</span><span>ABDELRAHMAN<span class="accent">.</span></span></a>
-    <nav class="nav-links">
-      <a href="#home">home</a><a href="#about">about</a><a href="#skills">skills</a><a href="#projects">projects</a><a href="#certificates">certificates</a><a href="#contact">contact</a>
+    <a class="brand" href="#home" aria-label="Home">
+      <span class="brand-mark">AF</span>
+      <span>ABDELRAHMAN<span class="accent">.</span></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="navLinks">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
     </nav>
-    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
   </header>
+
   <main>
-    <section id="home" class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">&lt;AI_ENGINEER /&gt;</p>
-        <h1>Abdelrahman Ahmed Faheem</h1>
-        <h2>AI &amp; Machine Learning <span class="accent">Developer</span></h2>
-        <p class="hero-text">Building intelligent systems with machine learning, LLMs, RAG and data-driven solutions.</p>
-        <div class="hero-actions"><a class="btn primary" href="#projects">view_projects()</a><a class="btn" href="#contact">contact_me()</a></div>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="pulse"></span> AI • MACHINE LEARNING • DATA SCIENCE</p>
+        <h1>ABDELRAHMAN<br><span>AHMED FAHEEM</span></h1>
+        <p class="hero-text">I turn data into practical, intelligent solutions using Artificial Intelligence, Machine Learning, Deep Learning, NLP, Python and SQL.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore My Work <span>↗</span></a><a class="btn btn-ghost" href="#contact">Let's Connect</a></div>
+        <div class="hero-tags"><span>Python</span><span>ML</span><span>LLMs</span><span>RAG</span><span>NLP</span><span>SQL</span></div>
       </div>
-      <div class="hero-code"><div class="code-window"><div class="dots"><i></i><i></i><i></i></div><pre><span class="keyword">const</span> developer = {
-  name: <span class="string">"Abdelrahman Ahmed Faheem"</span>,
-  role: <span class="string">"AI Developer"</span>,
-  focus: [<span class="string">"ML"</span>, <span class="string">"LLMs"</span>, <span class="string">"RAG"</span>],
-  available: <span class="number">true</span>
-};</pre></div></div>
+      <div class="hero-visual reveal">
+        <div class="web-orbit orbit-a"></div><div class="web-orbit orbit-b"></div>
+        <div class="spider-badge">AI<br><small>ENGINEER</small></div>
+        <div class="hanging-portrait"><img class="portrait-web-hang" src="assets/web-hang.png" alt="" aria-hidden="true" /><div class="portrait-frame"><div class="corner c1"></div><div class="corner c2"></div><img src="assets/profile.png" alt="Abdelrahman Ahmed Faheem" /></div></div>
+        <div class="web-thread thread-1"></div><div class="web-thread thread-2"></div>
+        <div class="hero-note note-1">BUILD<br><strong>SMART</strong></div><div class="hero-note note-2">THINK<br><strong>BEYOND</strong></div>
+      </div>
     </section>
-    <section id="about" class="section"><div class="section-title"><span>01.</span> about_me</div><div class="about-grid"><div><p>I build practical AI and machine-learning solutions, combining data science, large language models and modern application development.</p><p>My work includes intelligent automation, retrieval-augmented generation, model fine-tuning and API-based AI applications.</p></div><div class="terminal"><div>$ whoami</div><div>Abdelrahman Ahmed Faheem</div><div>$ location</div><div>Egypt</div><div>$ education</div><div>Arab Open University (AOU)</div></div></div></section>
-    <section id="skills" class="section"><div class="section-title"><span>02.</span> skills</div><div class="skills-grid"><span>Python</span><span>Machine Learning</span><span>Deep Learning</span><span>Data Science</span><span>RAG</span><span>LLMs</span><span>Llama 3 70B</span><span>QLoRA</span><span>LoRA</span><span>OCR</span><span>STT / TTS</span><span>FastAPI</span><span>JSON</span></div></section>
-    <section id="projects" class="section"><div class="section-title"><span>03.</span> projects</div><div class="projects-grid"><article class="project"><h3>AI &amp; LLM Applications</h3><p>LLM-powered workflows, RAG pipelines and intelligent assistants.</p></article><article class="project"><h3>Machine Learning</h3><p>Data-driven models, experimentation and predictive solutions.</p></article><article class="project"><h3>AI APIs</h3><p>Production-oriented AI services using Python and FastAPI.</p></article></div></section>
-    <section id="certificates" class="section"><div class="section-title"><span>04.</span> certificates</div><div class="cert-grid"><article class="cert"><img src="assets/certificates/build-with-ai.png" alt="Build with AI certificate"><h3>Build with AI</h3><p>الجهة المانحة: Google / AI Program</p></article><article class="cert"><img src="assets/certificates/data-science-intro.png" alt="Data Science certificate"><h3>Introduction to Data Science</h3><p>الجهة المانحة: Data Science Program</p></article><article class="cert placeholder"><div class="placeholder-icon">⌁</div><h3>DEBI</h3><p>الجهة المانحة: Digital Egypt Pioneers Initiative</p></article><article class="cert placeholder"><div class="placeholder-icon">⌘</div><h3>Java Programming</h3><p>الجهة المانحة: Arab Open University</p></article></div></section>
-    <section id="contact" class="section contact"><div class="section-title"><span>05.</span> contact</div><p>Let's build something intelligent.</p><div class="contact-links"><a href="mailto:ba824401@gmail.com">ba824401@gmail.com</a><a href="https://www.linkedin.com/in/abdelrahman-ahmed-985319311/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/Abdelrhmanahmedfaheem" target="_blank" rel="noopener">GitHub</a></div></section>
+
+    <section class="section about" id="about">
+      <div class="section-head reveal"><p class="eyebrow">01 / ABOUT ME</p><h2>Turning <span>data</span> into ideas.</h2></div>
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <div class="card-icon">⌘</div>
+          <p>I’m <strong>Abdelrahman Ahmed Faheem</strong>, an <strong>AI & Machine Learning developer</strong> focused on turning complex ideas into practical, intelligent products.</p>
+          <p>I build solutions across <strong>LLMs, Generative AI, RAG, NLP, OCR, voice interfaces, machine learning and data-driven applications</strong> — with an emphasis on useful results, clean implementation and real-world usability.</p>
+          <p>From model experimentation and fine-tuning to production-ready APIs with <strong>Python and FastAPI</strong>, I combine technical depth with a product-focused mindset to turn business needs into scalable AI solutions.</p>
+        </div>
+        <div class="stat-grid reveal">
+          <div class="stat glass"><strong>AI</strong><span>Intelligent Solutions</span></div><div class="stat glass"><strong>LLM</strong><span>GenAI Applications</span></div>
+          <div class="stat glass"><strong>RAG</strong><span>Knowledge Systems</span></div><div class="stat glass"><strong>SQL</strong><span>Data Insights</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-head reveal"><p class="eyebrow">02 / SKILLS</p><h2>My <span>toolbox.</span></h2></div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><div class="skill-no">01</div><h3>Machine Learning</h3><p>Model development, training, evaluation, prediction and intelligent decision support.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">02</div><h3>Deep Learning</h3><p>Neural networks and deep learning workflows for complex AI problems.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">03</div><h3>LLMs</h3><p>Large language model workflows for intelligent, context-aware applications.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">04</div><h3>Generative AI</h3><p>AI-powered applications built around generation, automation and intelligent interaction.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">05</div><h3>RAG</h3><p>Retrieval-Augmented Generation systems that connect LLMs with trusted knowledge sources.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">06</div><h3>NLP</h3><p>Text processing, language understanding and practical language-focused AI systems.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">07</div><h3>Llama 3 70B</h3><p>Working with large open-weight language models for advanced AI workflows.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">08</div><h3>Fine-Tuning</h3><p>Model adaptation workflows for specialized tasks and domain-focused applications.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">09</div><h3>LoRA</h3><p>Parameter-efficient model adaptation with lightweight fine-tuning workflows.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">10</div><h3>QLoRA</h3><p>Memory-efficient fine-tuning workflows for adapting large language models.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">11</div><h3>OCR</h3><p>Extracting and processing information from documents and visual text sources.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">12</div><h3>Voice Interface</h3><p>Conversational voice experiences powered by speech and language technologies.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">13</div><h3>STT</h3><p>Speech-to-Text pipelines for converting spoken input into usable digital data.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">14</div><h3>TTS</h3><p>Text-to-Speech experiences for natural and interactive AI applications.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">15</div><h3>Python</h3><p>AI development, data processing, automation and backend application workflows.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">16</div><h3>FastAPI</h3><p>Production-ready APIs for deploying intelligent services and AI workflows.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">17</div><h3>Data Science</h3><p>Data cleaning, exploration, analysis and extracting actionable insights.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">18</div><h3>SQL</h3><p>Querying, transforming and working with structured data for analytics.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">19</div><h3>JSON</h3><p>Structured data exchange for integrations, APIs and AI application workflows.</p><div class="skill-line"></div></article>
+        <article class="skill-card reveal"><div class="skill-no">20</div><h3>Docker</h3><p>Containerized application workflows for consistent development and deployment.</p><div class="skill-line"></div></article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-head reveal"><p class="eyebrow">03 / PROJECTS</p><h2>Selected <span>work.</span></h2></div>
+      <div class="project-grid">
+        <article class="project-card reveal"><div class="project-top"><span>AI / ML</span><span>01</span></div><h3>Predictive Analytics</h3><p>A machine learning workflow for turning historical data into useful predictions and measurable insights.</p><div class="project-stack"><span>Python</span><span>Scikit-learn</span><span>Pandas</span></div><a href="https://github.com/Abdelrhmanahmedfaheem/Abdelrahman-Ahmed-Faheem" class="project-link" target="_blank" rel="noopener">View GitHub ↗</a></article>
+        <article class="project-card reveal"><div class="project-top"><span>NLP / LLM</span><span>02</span></div><h3>Text Intelligence</h3><p>A natural language processing project focused on preprocessing, classification and text analysis.</p><div class="project-stack"><span>Python</span><span>NLP</span><span>LLMs</span></div><a href="https://github.com/Abdelrhmanahmedfaheem/Abdelrahman-Ahmed-Faheem" class="project-link" target="_blank" rel="noopener">View GitHub ↗</a></article>
+        <article class="project-card reveal"><div class="project-top"><span>DATA</span><span>03</span></div><h3>Data Analysis Dashboard</h3><p>Exploring datasets, finding patterns and presenting meaningful information for better decisions.</p><div class="project-stack"><span>SQL</span><span>Python</span><span>Data Science</span></div><a href="https://github.com/Abdelrhmanahmedfaheem/Abdelrahman-Ahmed-Faheem" class="project-link" target="_blank" rel="noopener">View GitHub ↗</a></article>
+      </div>
+    </section>
+
+    <section class="section certificates" id="certificates">
+      <div class="section-head reveal"><p class="eyebrow">04 / CERTIFICATES</p><h2>Credentials, <span>on the web.</span></h2></div>
+      <p class="section-sub reveal">A growing collection of certificates and learning milestones. Click a certificate image to view it larger.</p>
+      <div class="cert-grid">
+        <article class="certificate reveal">
+          <div class="web-string"></div><div class="web-hanger"><span></span><i></i><b></b></div><div class="medal"><span>★</span></div>
+          <a class="certificate-paper certificate-image" href="assets/certificates/build-with-ai.png" target="_blank" rel="noopener"><img src="assets/certificates/build-with-ai.png" alt="Build with AI certificate" /></a>
+          <div class="certificate-meta"><h3>Build with AI</h3><p>Google Developer Groups OnCampus — Arab Open University</p></div>
+        </article>
+        <article class="certificate reveal">
+          <div class="web-string"></div><div class="web-hanger"><span></span><i></i><b></b></div><div class="medal"><span>★</span></div>
+          <a class="certificate-paper certificate-image" href="assets/certificates/data-science-intro.png" target="_blank" rel="noopener"><img src="assets/certificates/data-science-intro.png" alt="Introduction to Data Science certificate" /></a>
+          <div class="certificate-meta"><h3>Introduction to Data Science</h3><p>TCSC Arab Open University — Cisco Networking Academy</p></div>
+        </article>
+        <article class="certificate reveal">
+          <div class="web-string"></div><div class="web-hanger"><span></span><i></i><b></b></div><div class="medal"><span>★</span></div>
+          <div class="certificate-paper placeholder-cert"><span class="cert-label">CERTIFICATE SLOT</span><h3>Digital Egypt Pioneers Initiative (DEBI)</h3><p>Issuing organization: Digital Egypt Pioneers Initiative</p><div class="cert-seal">DEBI</div><span class="placeholder-note">Image coming soon</span></div>
+          <div class="certificate-meta"><h3>Digital Egypt Pioneers Initiative</h3><p>Digital Egypt Pioneers Initiative (DEBI)</p></div>
+        </article>
+        <article class="certificate reveal">
+          <div class="web-string"></div><div class="web-hanger"><span></span><i></i><b></b></div><div class="medal"><span>★</span></div>
+          <div class="certificate-paper placeholder-cert"><span class="cert-label">CERTIFICATE SLOT</span><h3>Java Programming</h3><p>Issuing organization: Arab Open University</p><div class="cert-seal">JAVA</div><span class="placeholder-note">Image coming soon</span></div>
+          <div class="certificate-meta"><h3>Java Programming</h3><p>Arab Open University</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-box reveal"><p class="eyebrow">05 / CONTACT</p><h2>Let’s build something<br><span>intelligent.</span></h2><p>Have an idea or project? Send me the details and let’s start working on it.</p>
+        <div class="contact-actions"><a class="btn btn-primary" href="mailto:ba824401@gmail.com">Email Me ↗</a><a class="btn btn-ghost" href="https://www.linkedin.com/in/abdelrahman-ahmed-985319311" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn btn-ghost" href="https://github.com/Abdelrhmanahmedfaheem/Abdelrahman-Ahmed-Faheem" target="_blank" rel="noopener">GitHub ↗</a></div>
+        <div class="contact-details"><a href="mailto:ba824401@gmail.com">ba824401@gmail.com</a><a href="tel:+201140296406">01140296406</a></div>
+      </div>
+    </section>
   </main>
-  <footer>© 2026 Abdelrahman Ahmed Faheem</footer>
+  <footer><span>© 2026 Abdelrahman Ahmed Faheem</span><span>Built with AI-minded precision & web technology.</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
